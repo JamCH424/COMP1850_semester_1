@@ -14,3 +14,10 @@ Hobbies
   * Minecraft
 
 Also quite a big fan of anime, webcomics and manwhas.
+
+
+Animes I would recommend
+------------
+* JJBA
+* Gurren Laggen
+* Hunter x Hunter
