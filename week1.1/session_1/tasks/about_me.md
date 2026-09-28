@@ -21,3 +21,10 @@ Animes I would recommend
 * JJBA
 * Gurren Laggen
 * Hunter x Hunter
+
+<br></br>
+
+### Quotes I enjoy ###
+"*I'm not what I think i am and i am not what you think i am. I am what I think you think i am.*”
+
+— Charles Cooley
