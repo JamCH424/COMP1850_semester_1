@@ -18,8 +18,8 @@
 running = True
 while running == True:
     try:
-        num1 = float(input("Enter your number: "))
-        num2 = float(input("Enter your number: "))
+        num1 = float(input("Enter your first number: "))
+        num2 = float(input("Enter your second number: "))
         answer = num1 * num2
         print(f"{num1} x {num2} = {answer}")
         running = False
