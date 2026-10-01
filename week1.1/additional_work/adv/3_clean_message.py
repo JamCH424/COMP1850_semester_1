@@ -7,6 +7,11 @@
 
 raw_message = input("Type a message to tidy: ")
 
+print(f"\nOriginal String: {raw_message}")
+print(f"Modified String Strip: {raw_message.strip()}")
+print(f"Modified String Title: {raw_message.title()}")
+print(f"Modified String Upper: {raw_message.upper()}")
+
 # TODO: apply a sequence of string methods to produce a cleaned_message
 # Example methods: strip, title, replace, lower, upper
 # TODO: display the original and cleaned messages
