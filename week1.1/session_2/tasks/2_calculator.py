@@ -1,6 +1,7 @@
 # Fill out the code to make a very simple calculator
 
 # ask the user to enter number1:
+
 num1 = float(input("Enter your first number: "))
 
 # ask the user to enter number 2:
