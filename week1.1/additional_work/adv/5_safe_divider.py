@@ -5,8 +5,14 @@
 - Only print the final answer when the calculation succeeds.
 """
 
-numerator_input = input("Enter the numerator: ")
-denominator_input = input("Enter the denominator: ")
+numerator_input = float(input("Enter the numerator: "))
+denominator_input = float(input("Enter the denominator: "))
+
+try:
+    ans = numerator_input/denominator_input
+    print(ans)
+except:
+    print("Could not divide.")
 
 # TODO: wrap the risky operations in a try/except block
 # TODO: convert the values to integers and perform the division
