@@ -14,3 +14,14 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+
+running = True
+while running == True:
+    try:
+        num1 = float(input("Enter your number: "))
+        num2 = float(input("Enter your number: "))
+        answer = num1 * num2
+        print(f"{num1} x {num2} = {answer}")
+        running = False
+    except:
+        print("\nThat is not a number\n")
