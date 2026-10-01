@@ -14,7 +14,7 @@ running = True
 while running == True:
     try:
         save_per_month = int(input("How much money do you want to save?: "))
-        running == False
+        running = False
     except:
         print("\nThat isn't an integer, please try again.\n")
 
@@ -29,4 +29,4 @@ print(f"You will save {money_saved_per_year} by the end of the year if you save 
 # print this out in the format £X.XX (to two decimal places).
 
 money_saved_per_year_and_interest = float(money_saved_per_year * 1.08)
-print(f"Including interest that is {ModuleNotFoundError:.2f}!")
+print(f"Including interest that is {money_saved_per_year_and_interest:.2f}!")
