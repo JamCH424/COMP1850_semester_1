@@ -13,7 +13,5 @@ print(fruit.count("cherry"))
 print(fruit.count("strawberry"))
 
 # Unpack tuple into variables
-fruit1 = fruit[0]
-fruit2 = fruit[1]
-fruit3 = fruit[2]
+(fruit1,fruit2,fruit3) = fruit
 print(fruit1, fruit2, fruit3)
