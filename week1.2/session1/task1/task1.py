@@ -2,12 +2,12 @@
 
 # Create a shopping list
 
-shopping = ["eggs", "milk", "flour", "carrots"]
+shopping = ["eggs", "yogurt","milk", "flour", "carrots"]
 print(shopping)
 
 # We forgot something, so add it to list
 
-shopping.append("bananas")
+shopping.append("grapes")
 print(shopping)
 
 # We bought something, so remove it from list
