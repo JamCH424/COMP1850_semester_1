@@ -9,7 +9,7 @@ try:
         print(f"{num} is a Pass")
     elif 100 >= num >= 70:
         print(f"{num} is a Distinction")
-    elif num > 100:
+    elif num > 100 or 0 < num:
         sys.exit("Error: Grade must be an integer between 0 and 100")
 except:
     sys.exit("Error: Grade must be an integer between 0 and 100")

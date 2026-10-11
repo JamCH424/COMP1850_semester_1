@@ -4,10 +4,10 @@ import sys
 list = []
 
 for i in range(0,5):
-    try:
-        num = float(input("Enter a number: "))
-        list.append(num)
-    except:
+    num = float(input("Enter a number: "))
+    list.append(num)
+    
+if len(list) == 0:
         sys.exit("Error: no numbers provided")
 
 print("Minimum = ",min(list))
