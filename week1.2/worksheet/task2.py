@@ -1,12 +1,9 @@
 # Worksheet 1.2: Task 2 Solution
 import sys
+from util import read_numbers
 
-list = []
+list = read_numbers()
 
-for i in range(0,5):
-    num = float(input("Enter a number: "))
-    list.append(num)
-    
 if len(list) == 0:
         sys.exit("Error: no numbers provided")
 
