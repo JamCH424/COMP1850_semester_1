@@ -7,7 +7,11 @@ list = read_numbers()
 if len(list) == 0:
         sys.exit("Error: no numbers provided")
 
-print("Minimum = ",min(list))
-print("Maximum = ",max(list))
+print(f"Minimum = {min(list)}")
+print(f"Maximum = {max(list)}")
 mean = sum(list)/len(list)
-print("Mean = ",mean)
+print(f"Mean = {mean}")
+list.sort()
+middle = round(len(list)/2) - 1
+median = list[middle]
+print(f"Median = {median}")
