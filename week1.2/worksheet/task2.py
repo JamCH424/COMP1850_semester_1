@@ -13,5 +13,8 @@ mean = sum(list)/len(list)
 print(f"Mean = {mean}")
 list.sort()
 middle = round(len(list)/2) - 1
-median = list[middle]
+if len(list) % 2 == 1:
+        median = list[middle]
+if len(list) % 2 == 0:
+        median = (list[middle] +list[middle+1])/2
 print(f"Median = {median}")
