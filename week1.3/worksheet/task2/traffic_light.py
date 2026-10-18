@@ -14,6 +14,7 @@ state = "red"
 print(f"Time {systime:03} State {state}")
 
 state_time = int(states.get(state))
+state_time -= 1
 
 for i in range(0,maxtime):
     systime += 1
