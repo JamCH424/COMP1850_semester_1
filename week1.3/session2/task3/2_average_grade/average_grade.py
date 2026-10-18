@@ -14,3 +14,13 @@
 # Write each student's name and their average grade to the report
 # hint: use 'w' mode to create a fresh report each time
 # hint: format averages nicely, maybe to 2 decimal places with :.2f
+
+data = []
+
+with open("student_data.csv","r") as file:
+    for line in file:
+        data.append(line.strip().split(","))
+    with open("report.txt","w") as report:
+        for i in range (1,len(data)):
+            average = (int(data[i][2]) + int(data[i][3]) + int(data[i][4])) / 3
+            report.writelines([f"{data[i][1]},{average:.2f}\n"])
