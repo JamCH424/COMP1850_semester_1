@@ -18,3 +18,9 @@
 # - Each row has: Date, Time, IP_Address, User_Agent, Request, Status_Code
 # - You need to find rows where Request = "POST /login" AND Status_Code = "401"
 # - You can use list comprehension or loops to filter the data
+
+with open("site.txt","r") as infile:
+    for line in infile:
+        data = line.strip().split(",")
+        if data[4] == "POST /login" and data[5] == "401":
+            print(f"IP address {data[0]} failed to login at {data[1]} on {data[2]}")
