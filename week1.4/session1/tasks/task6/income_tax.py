@@ -36,20 +36,20 @@ def income_tax_calculator(annual_income):
     tax = 0
     if annual_income >= 12571:
         if annual_income >= 50721:
-            tax += 38150
+            tax += (38150 * 0.2)
         else:
             tax += (annual_income - 12570) * 0.2
 
     if annual_income >= 50721:
             if annual_income >= 125140:
-                tax += 74419
+                tax += (74419 * 0.4)
             else:
-                tax += (annual_income - 12570) * 0.4
+                tax += (annual_income - 50720) * 0.4
     
     if annual_income >= 125141:
-        tax += (annual_income - 125140) * 0.4
+        tax += (annual_income - 125140) * 0.45
 
-    return tax
+    return round(tax, 1)
 
 # Check if the following lines produce the correct output
 print(income_tax_calculator(12000))     # 0.0
