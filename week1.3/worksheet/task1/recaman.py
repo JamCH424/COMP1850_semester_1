@@ -9,9 +9,10 @@ L = int(input("Length of sequence: ")) # this should be your only input
 sequence = [0]
 
 for i in range (1,L+1):
-    print(i)
     print(sequence)
-    if sequence[i-1] > 0:
+    if (sequence[i-1] - i) > 0:
+        print(sequence[i-1] - i)
+        print(i)
         count = 0
         running = True
         while running:
