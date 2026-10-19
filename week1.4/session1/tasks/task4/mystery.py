@@ -21,6 +21,8 @@ def mystery_func(string):
             lower += 1
     return (upper, lower)
 
+#Checks the string inputed and counts the amount of character in the string that are upper and lower case in different counts
+#then return those two counts
 
 # testing
 
