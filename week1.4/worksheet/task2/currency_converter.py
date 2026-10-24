@@ -20,8 +20,12 @@ def currency_converter(amount, from_currency, to_currency):
 
     # your code here
 
-    return None
+    conversion_list = conversion_rate.get(from_currency)
+    conversion_ratio = conversion_list.get(to_currency)
 
+    new_amount = amount * conversion_ratio
+    return new_amount
+ 
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.
