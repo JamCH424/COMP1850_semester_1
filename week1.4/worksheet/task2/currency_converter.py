@@ -23,7 +23,11 @@ def currency_converter(amount, from_currency, to_currency):
     conversion_list = conversion_rate.get(from_currency)
     conversion_ratio = conversion_list.get(to_currency)
 
-    new_amount = amount * conversion_ratio
+    if amount > 0:
+        new_amount = amount * conversion_ratio
+    else:
+        new_amount = 0
+        
     return new_amount
  
 # Submit only this file currency_converter.py with the completed function.
