@@ -21,6 +21,19 @@ def most_frequent_string(votes):
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
 
+    templist = []
+
+    for vote in votes:
+        Inlist = False
+        for i in range(0,len(templist)):
+            if templist[i][0] == vote:
+                templist[i][1] = templist[i][1] + 1
+                Inlist = True
+        if Inlist == False:
+            templist.append([vote,1])
+
+    return templist
+
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']

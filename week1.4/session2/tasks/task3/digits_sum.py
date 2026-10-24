@@ -20,7 +20,14 @@ def digits_sum(number):
     # complete your code here
     # base case
 
+    sum = int(str(number)[0:1])
     # recursive case
+
+    if len(str(number)) > 1:
+        sum += digits_sum(int(str(number)[1:]))
+        return sum
+    else:
+        return sum
 
 
 # check if correct output is produced
@@ -29,3 +36,7 @@ print(digits_sum(12345))  # Output: 15
 
 
 # Once completed, your next task is to write an equivalent function that uses loops.
+sum = 0
+for char in str(10034):
+    sum += int(char)
+print(sum)

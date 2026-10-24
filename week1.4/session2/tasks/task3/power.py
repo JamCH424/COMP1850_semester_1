@@ -7,8 +7,15 @@
 def power(x, n):
     # complete your code here
     # base case
+    if n == 1:
+        return x
 
     # recursive case
 
-
+    else:
+        return x * power(x, n-1)
+    
 # Once completed, make at least two function calls to test the power function
+
+print(power(20,2))
+print(power(3,3))
