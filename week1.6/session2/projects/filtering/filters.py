@@ -22,6 +22,7 @@ def blur(img):
 
     return result
 
-img = Image.read("/workspaces/COMP1850_semester_1/week1.6/session2/images/coins.pgm")
+img = Image.read("../../images/coins.pgm")
+#img = Image.read("/workspaces/COMP1850_semester_1/week1.6/session2/images/coins.pgm")
 result = blur(img)
 result.write_pgm("blurred.pgm")
