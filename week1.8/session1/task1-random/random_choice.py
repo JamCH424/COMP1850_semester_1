@@ -9,3 +9,8 @@ with open("names.txt") as infile:
 # from the list, avoiding any duplicate choices
 
 # Display the chosen names, one per line
+
+num = int(input("Enter a number: "))
+
+for i in range(0,num):
+    print(random.choice(names))
