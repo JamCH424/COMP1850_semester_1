@@ -3,7 +3,7 @@ import httpx
 import pandas as pd
 import matplotlib.pyplot as plt
 
-api_key="U6KXJTZC2E8VGH39PD7UMG4BZ"   # your API key
+api_key="HFFVNKENZFEADBST45KPKUV6P"   # your API key
 
 city="Leeds"     # city location
 country="UK"     # country location
@@ -30,7 +30,6 @@ print(data)
 
 # extract the temperature data as lists from the JSON dictionary
 temp_data = data['days']
-
 print(temp_data)
 
 # use pandas to convert data to  dataframe
@@ -40,6 +39,10 @@ df = pd.DataFrame(temp_data)
 # using matplotlib plot the 3 data sets: (tempmin,temp,tempmax) as line graphs
 
 df.plot()
+
+#Add x and Y labels to the graph
+plt.xlabel("Days")
+plt.ylabel("Temperature in farenheit")
 
 plt.show()
 
